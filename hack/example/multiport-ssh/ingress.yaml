@@ -4,6 +4,11 @@ metadata:
   name: ssh-test
   namespace: default
 spec:
+  tls:
+  - secretName: fake-secret
+    hosts:
+    - ssh.appscode.co
+    - ssh-2.appscode.co
   rules:
   - host: ssh.appscode.co
     tcp:
