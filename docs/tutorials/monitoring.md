@@ -73,7 +73,7 @@ items:
   metadata:
     creationTimestamp: 2017-07-21T00:31:06Z
     labels:
-      app: kubedb
+      app: voyager
     name: voyager-demo-test-ingress
     namespace: demo
     resourceVersion: "4118"

@@ -6,7 +6,7 @@ metadata:
   annotations:
     ingress.appscode.com/stats: 'true'
     ingress.appscode.com/monitoring-agent: 'coreos-prometheus-operator'
-    ingress.appscode.com/service-monitor-labels: '{"app": "kubedb"}'
+    ingress.appscode.com/service-monitor-labels: '{"app": "voyager"}'
     ingress.appscode.com/service-monitor-namespace: 'demo'
 spec:
   backend:
