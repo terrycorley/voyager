@@ -1,0 +1,19 @@
+kind: Secret
+metadata:
+  name: test-aws-secret
+  namespace: default
+data:
+  AWS_ACCESS_KEY_ID: <>
+  AWS_SECRET_ACCESS_KEY: <>
+---
+apiVersion: voyager.appscode.com/v1beta1
+kind: Certificate
+metadata:
+  name: test-cert
+  namespace: default
+spec:
+  domains:
+  - test.qa.getcotainercloud.com
+  email: admin@appscode.com
+  provider: route53
+  providerCredentialSecretName: test-aws-secret
