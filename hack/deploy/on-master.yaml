@@ -23,7 +23,7 @@ spec:
         args:
         - run
         - --cloud-provider=aws
-        - --v=3
+        - --v=5
         image: appscode/voyager:hpc
         imagePullPolicy: Always
         ports:
