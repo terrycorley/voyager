@@ -24,7 +24,7 @@ spec:
         - run
         - --cloud-provider=aws
         - --v=5
-        image: appscode/voyager:hpc
+        image: appscode/voyager:3.2.0-beta.0
         imagePullPolicy: Always
         ports:
         - containerPort: 56790
