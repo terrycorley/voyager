@@ -51,7 +51,7 @@ metadata:
   namespace: default
   annotations:
     ingress.appscode.com/type: HostPort
-    ingress.appscode.com/node-selector: '{"kubernetes.io/role": "node"}'
+    ingress.appscode.com/node-selector: '{"kubernetes.io/hostname": "ip-172-20-55-224.ec2.internal"}'
 spec:
   rules:
   - host:
