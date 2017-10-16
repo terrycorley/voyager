@@ -11,7 +11,6 @@ func NewCheckCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "check",
 		Short: "Validate kloader configuration",
-		DisableAutoGenTag: true,
 		Run: func(cmd *cobra.Command, args []string) {
 			if configMap != "" {
 				mounter := controller.NewConfigMapMounter(getRestConfig(), configMap, mountDir, bashFile, resyncPeriod)
