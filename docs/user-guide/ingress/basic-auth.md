@@ -61,7 +61,7 @@ spec:
       paths:
       - path: /testpath
         backend:
-          serviceName: test-server
+          serviceName: test-service
           servicePort: 80
 ```
 
